@@ -2,3 +2,12 @@
 name = "mmap"
 version = "0.1.0"
 authors = ["Andrea Canciani <ranma42@gmail.com>"]
+description = "Safe bindings to memory maps in Rust"
+documentation = "http://ranma42.github.io/rust-mmap/target/doc/mmap"
+homepage = "https://github.com/ranma42/rust-mmap"
+repository = "https://github.com/ranma42/rust-mmap.git"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+libc = "*"

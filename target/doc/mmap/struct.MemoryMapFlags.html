@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `MemoryMapFlags` struct in crate `mmap`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, MemoryMapFlags">
+
+    <title>mmap::MemoryMapFlags - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>mmap</a></p><script>window.sidebarCurrent = {name: 'MemoryMapFlags', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>mmap</a>::<wbr><a class='struct' href=''>MemoryMapFlags</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-8' class='srclink' href='../src/mmap/lib.rs.html#16-23' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct MemoryMapFlags&lt;'a&gt; {
+    // some fields omitted
+}</pre><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a&gt; <a class='struct' href='../mmap/struct.MemoryMapFlags.html' title='mmap::MemoryMapFlags'>MemoryMapFlags</a>&lt;'a&gt;</code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>() -&gt; <a class='struct' href='../mmap/struct.MemoryMapFlags.html' title='mmap::MemoryMapFlags'>MemoryMapFlags</a>&lt;'a&gt;</code></h4>
+<h4 id='method.base' class='method'><code>fn <a href='#method.base' class='fnname'>base</a>(&amp;mut self, base: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='http://doc.rust-lang.org/nightly/libc/types/common/c95/enum.c_void.html' title='libc::types::common::c95::c_void'>c_void</a></a>) -&gt; &amp;mut <a class='struct' href='../mmap/struct.MemoryMapFlags.html' title='mmap::MemoryMapFlags'>MemoryMapFlags</a>&lt;'a&gt;</code></h4>
+<h4 id='method.offset' class='method'><code>fn <a href='#method.offset' class='fnname'>offset</a>(&amp;mut self, offset: <a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>) -&gt; &amp;mut <a class='struct' href='../mmap/struct.MemoryMapFlags.html' title='mmap::MemoryMapFlags'>MemoryMapFlags</a>&lt;'a&gt;</code></h4>
+<h4 id='method.len' class='method'><code>fn <a href='#method.len' class='fnname'>len</a>(&amp;mut self, len: <a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>) -&gt; &amp;mut <a class='struct' href='../mmap/struct.MemoryMapFlags.html' title='mmap::MemoryMapFlags'>MemoryMapFlags</a>&lt;'a&gt;</code></h4>
+<h4 id='method.shared' class='method'><code>fn <a href='#method.shared' class='fnname'>shared</a>(&amp;mut self, shared: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; &amp;mut <a class='struct' href='../mmap/struct.MemoryMapFlags.html' title='mmap::MemoryMapFlags'>MemoryMapFlags</a>&lt;'a&gt;</code></h4>
+<h4 id='method.exec' class='method'><code>fn <a href='#method.exec' class='fnname'>exec</a>(&amp;mut self, exec: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; &amp;mut <a class='struct' href='../mmap/struct.MemoryMapFlags.html' title='mmap::MemoryMapFlags'>MemoryMapFlags</a>&lt;'a&gt;</code></h4>
+<h4 id='method.anon' class='method'><code>fn <a href='#method.anon' class='fnname'>anon</a>(&amp;mut self) -&gt; &amp;mut <a class='struct' href='../mmap/struct.MemoryMapFlags.html' title='mmap::MemoryMapFlags'>MemoryMapFlags</a>&lt;'a&gt;</code></h4>
+<h4 id='method.file' class='method'><code>fn <a href='#method.file' class='fnname'>file</a>(&amp;mut self, file: &amp;'a <a class='struct' href='http://doc.rust-lang.org/nightly/std/fs/struct.File.html' title='std::fs::File'>File</a>) -&gt; &amp;mut <a class='struct' href='../mmap/struct.MemoryMapFlags.html' title='mmap::MemoryMapFlags'>MemoryMapFlags</a>&lt;'a&gt;</code></h4>
+<h4 id='method.map_readonly' class='method'><code>fn <a href='#method.map_readonly' class='fnname'>map_readonly</a>(&amp;self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../mmap/struct.ConstMemoryMap.html' title='mmap::ConstMemoryMap'>ConstMemoryMap</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/std/io/error/struct.Error.html' title='std::io::error::Error'>Error</a>&gt;</code></h4>
+<h4 id='method.map_readwrite' class='method'><code>fn <a href='#method.map_readwrite' class='fnname'>map_readwrite</a>(&amp;self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../mmap/struct.MutMemoryMap.html' title='mmap::MutMemoryMap'>MutMemoryMap</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/std/io/error/struct.Error.html' title='std::io::error::Error'>Error</a>&gt;</code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+            <p>
+                Search functions by type signature (e.g.
+                <code>vec -> usize</code>)
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "mmap";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

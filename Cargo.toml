@@ -1,0 +1,4 @@
+[package]
+name = "mmap"
+version = "0.1.0"
+authors = ["Andrea Canciani <ranma42@gmail.com>"]
